@@ -1,0 +1,25 @@
+<div class="container"><br>
+  <table class="table table">
+  <div class = "myCSS row ">
+  <br><br>
+  <form class="form form-group column" role="form">
+    <input [(ngModel)]="EmployeeCode" name = "Number1" type="text" style="height:70px;" class="form-control input-lg mb-2 mr-sm-2" placeholder="Enter Employee Code">
+    <input [(ngModel)]="Password" name = "Number2" type="text" style="height:70px;" class="form-control input-lg mb-2 mr-sm-2" placeholder="Enter Password">
+
+
+    <div class="form-check mb-2 mr-sm-2">
+    </div>    
+    &nbsp;
+  <button (click)="Login()" type="button" class="button">Login</button>&nbsp;&nbsp;
+  <button (click)="Register()" type="button" class="button">Register</button>&nbsp;&nbsp;<br>
+  <a href="/forgotpassword">Forgot Password</a>
+
+</form>
+<div class="column">
+  <h1 style="font-family: Comic Sans MS; font-size: 8rem">{{Answer}}</h1>
+  <h5 style="font-family: Comic Sans MS; color: red; font-size: 3rem;font-weight: bold">{{ErrorMessage}}</h5>
+<span class="blink" style="font-family: Comic Sans MS; color:  rgb(0, 255, 55); font-size: 1.5rem;">{{Message}}</span>
+</div>
+</div>
+</table>
+</div>
